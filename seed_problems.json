@@ -1,0 +1,296 @@
+[
+  {
+    "id": 1,
+    "slug": "01-hello-and-sum",
+    "title": "01 Hello And Sum",
+    "language": "C",
+    "file": "01-hello-and-sum.c"
+  },
+  {
+    "id": 2,
+    "slug": "02-even-odd-largest",
+    "title": "02 Even Odd Largest",
+    "language": "C",
+    "file": "02-even-odd-largest.c"
+  },
+  {
+    "id": 3,
+    "slug": "03-factorial",
+    "title": "03 Factorial",
+    "language": "C",
+    "file": "03-factorial.c"
+  },
+  {
+    "id": 4,
+    "slug": "04-fibonacci",
+    "title": "04 Fibonacci",
+    "language": "C",
+    "file": "04-fibonacci.c"
+  },
+  {
+    "id": 5,
+    "slug": "05-prime-check",
+    "title": "05 Prime Check",
+    "language": "C",
+    "file": "05-prime-check.c"
+  },
+  {
+    "id": 6,
+    "slug": "06-palindrome-number",
+    "title": "06 Palindrome Number",
+    "language": "C",
+    "file": "06-palindrome-number.c"
+  },
+  {
+    "id": 7,
+    "slug": "07-reverse-sum-digits",
+    "title": "07 Reverse Sum Digits",
+    "language": "C",
+    "file": "07-reverse-sum-digits.c"
+  },
+  {
+    "id": 8,
+    "slug": "08-array-largest-smallest-average",
+    "title": "08 Array Largest Smallest Average",
+    "language": "C",
+    "file": "08-array-largest-smallest-average.c"
+  },
+  {
+    "id": 9,
+    "slug": "09-bubble-sort-linear-search",
+    "title": "09 Bubble Sort Linear Search",
+    "language": "C",
+    "file": "09-bubble-sort-linear-search.c"
+  },
+  {
+    "id": 10,
+    "slug": "10-string-reverse-vowel-count",
+    "title": "10 String Reverse Vowel Count",
+    "language": "C",
+    "file": "10-string-reverse-vowel-count.c"
+  },
+  {
+    "id": 11,
+    "slug": "11-swap-using-pointers",
+    "title": "11 Swap Using Pointers",
+    "language": "C",
+    "file": "11-swap-using-pointers.c"
+  },
+  {
+    "id": 12,
+    "slug": "12-student-structure",
+    "title": "12 Student Structure",
+    "language": "C",
+    "file": "12-student-structure.c"
+  },
+  {
+    "id": 13,
+    "slug": "13-file-write-read",
+    "title": "13 File Write Read",
+    "language": "C",
+    "file": "13-file-write-read.c"
+  },
+  {
+    "id": 14,
+    "slug": "14-factorial-recursion",
+    "title": "14 Factorial Recursion",
+    "language": "C",
+    "file": "14-factorial-recursion.c"
+  },
+  {
+    "id": 15,
+    "slug": "15-fibonacci-recursion",
+    "title": "15 Fibonacci Recursion",
+    "language": "C",
+    "file": "15-fibonacci-recursion.c"
+  },
+  {
+    "id": 16,
+    "slug": "16-gcd-recursion",
+    "title": "16 Gcd Recursion",
+    "language": "C",
+    "file": "16-gcd-recursion.c"
+  },
+  {
+    "id": 17,
+    "slug": "17-tower-of-hanoi",
+    "title": "17 Tower Of Hanoi",
+    "language": "C",
+    "file": "17-tower-of-hanoi.c"
+  },
+  {
+    "id": 18,
+    "slug": "18-dynamic-array-malloc",
+    "title": "18 Dynamic Array Malloc",
+    "language": "C",
+    "file": "18-dynamic-array-malloc.c"
+  },
+  {
+    "id": 19,
+    "slug": "19-matrix-multiplication",
+    "title": "19 Matrix Multiplication",
+    "language": "C",
+    "file": "19-matrix-multiplication.c"
+  },
+  {
+    "id": 20,
+    "slug": "20-linked-list",
+    "title": "20 Linked List",
+    "language": "C",
+    "file": "20-linked-list.c"
+  },
+  {
+    "id": 21,
+    "slug": "21-stack-using-array",
+    "title": "21 Stack Using Array",
+    "language": "C",
+    "file": "21-stack-using-array.c"
+  },
+  {
+    "id": 22,
+    "slug": "22-queue-using-array",
+    "title": "22 Queue Using Array",
+    "language": "C",
+    "file": "22-queue-using-array.c"
+  },
+  {
+    "id": 23,
+    "slug": "23-file-copy-count",
+    "title": "23 File Copy Count",
+    "language": "C",
+    "file": "23-file-copy-count.c"
+  },
+  {
+    "id": 24,
+    "slug": "24-student-array-structure",
+    "title": "24 Student Array Structure",
+    "language": "C",
+    "file": "24-student-array-structure.c"
+  },
+  {
+    "id": 25,
+    "slug": "palindrome-check",
+    "title": "Palindrome Check",
+    "language": "Python",
+    "file": "palindrome-check.py"
+  },
+  {
+    "id": 26,
+    "slug": "reverse-string",
+    "title": "Reverse String",
+    "language": "Python",
+    "file": "reverse-string.py"
+  },
+  {
+    "id": 27,
+    "slug": "two-sum",
+    "title": "Two Sum",
+    "language": "Python",
+    "file": "two-sum.py"
+  },
+  {
+    "id": 28,
+    "slug": "01-hello-and-sum",
+    "title": "01 Hello And Sum",
+    "language": "C++",
+    "file": "01-hello-and-sum.cpp"
+  },
+  {
+    "id": 29,
+    "slug": "02-even-odd-largest",
+    "title": "02 Even Odd Largest",
+    "language": "C++",
+    "file": "02-even-odd-largest.cpp"
+  },
+  {
+    "id": 30,
+    "slug": "03-factorial",
+    "title": "03 Factorial",
+    "language": "C++",
+    "file": "03-factorial.cpp"
+  },
+  {
+    "id": 31,
+    "slug": "04-fibonacci",
+    "title": "04 Fibonacci",
+    "language": "C++",
+    "file": "04-fibonacci.cpp"
+  },
+  {
+    "id": 32,
+    "slug": "05-prime-check",
+    "title": "05 Prime Check",
+    "language": "C++",
+    "file": "05-prime-check.cpp"
+  },
+  {
+    "id": 33,
+    "slug": "06-palindrome-string",
+    "title": "06 Palindrome String",
+    "language": "C++",
+    "file": "06-palindrome-string.cpp"
+  },
+  {
+    "id": 34,
+    "slug": "07-array-largest-smallest",
+    "title": "07 Array Largest Smallest",
+    "language": "C++",
+    "file": "07-array-largest-smallest.cpp"
+  },
+  {
+    "id": 35,
+    "slug": "08-bubble-sort",
+    "title": "08 Bubble Sort",
+    "language": "C++",
+    "file": "08-bubble-sort.cpp"
+  },
+  {
+    "id": 36,
+    "slug": "09-class-student",
+    "title": "09 Class Student",
+    "language": "C++",
+    "file": "09-class-student.cpp"
+  },
+  {
+    "id": 37,
+    "slug": "10-inheritance",
+    "title": "10 Inheritance",
+    "language": "C++",
+    "file": "10-inheritance.cpp"
+  },
+  {
+    "id": 38,
+    "slug": "11-polymorphism",
+    "title": "11 Polymorphism",
+    "language": "C++",
+    "file": "11-polymorphism.cpp"
+  },
+  {
+    "id": 39,
+    "slug": "12-stl-vector-sort",
+    "title": "12 Stl Vector Sort",
+    "language": "C++",
+    "file": "12-stl-vector-sort.cpp"
+  },
+  {
+    "id": 40,
+    "slug": "13-stack-using-class",
+    "title": "13 Stack Using Class",
+    "language": "C++",
+    "file": "13-stack-using-class.cpp"
+  },
+  {
+    "id": 41,
+    "slug": "14-linked-list",
+    "title": "14 Linked List",
+    "language": "C++",
+    "file": "14-linked-list.cpp"
+  },
+  {
+    "id": 42,
+    "slug": "15-file-handling",
+    "title": "15 File Handling",
+    "language": "C++",
+    "file": "15-file-handling.cpp"
+  }
+]
