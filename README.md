@@ -23,6 +23,7 @@ Django is still honestly unshipped — do not claim it.
 
 | Method | Path | What it does |
 | --- | --- | --- |
+| GET | `/` | API index: name, total problems, endpoint list |
 | GET | `/health` | `{"status": "ok"}` |
 | GET | `/api/stats` | total 45, counts by language, teams/colleges |
 | GET | `/api/problems?q=linked+list&language=C` | search + filter |

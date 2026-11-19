@@ -129,6 +129,26 @@ class ProblemRepository:
 
 
 # --- Routes -------------------------------------------------------------
+@app.get("/")
+def index():
+    db = get_db()
+    return jsonify(
+        {
+            "name": "DSA Problems API",
+            "total_problems": db.execute(
+                "SELECT COUNT(*) FROM problems"
+            ).fetchone()[0],
+            "endpoints": {
+                "health": "/health",
+                "stats": "/api/stats",
+                "problems": "/api/problems",
+                "problem": "/api/problems/<id>",
+                "leaderboard": "/api/leaderboard",
+            },
+        }
+    )
+
+
 @app.get("/health")
 def health():
     return jsonify({"status": "ok"})

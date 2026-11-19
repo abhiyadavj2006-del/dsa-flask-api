@@ -18,13 +18,19 @@ class ApiTest(unittest.TestCase):
         os.close(self.db_fd)
         os.unlink(self.db_path)
 
+    def test_index(self):
+        data = self.client.get("/").get_json()
+        self.assertEqual(data["name"], "DSA Problems API")
+        self.assertEqual(data["total_problems"], 45)
+        self.assertEqual(data["endpoints"]["stats"], "/api/stats")
+
     def test_health(self):
         self.assertEqual(self.client.get("/health").get_json(), {"status": "ok"})
 
-    def test_stats_counts_all_42_problems(self):
+    def test_stats_counts_all_45_problems(self):
         data = self.client.get("/api/stats").get_json()
-        self.assertEqual(data["total_problems"], 42)
-        self.assertEqual(data["by_language"], {"C": 24, "C++": 15, "Python": 3})
+        self.assertEqual(data["total_problems"], 45)
+        self.assertEqual(data["by_language"], {"C": 25, "C++": 16, "Python": 4})
 
     def test_search_multiword(self):
         data = self.client.get("/api/problems?q=linked+list").get_json()
@@ -34,7 +40,7 @@ class ApiTest(unittest.TestCase):
 
     def test_filter_by_language(self):
         data = self.client.get("/api/problems?language=Python").get_json()
-        self.assertEqual(len(data), 3)
+        self.assertEqual(len(data), 4)
         self.assertEqual(data[0]["slug"], "palindrome-check")
 
     def test_get_one_and_404(self):
@@ -43,8 +49,8 @@ class ApiTest(unittest.TestCase):
         self.assertEqual(self.client.get("/api/problems/999").status_code, 404)
 
     def test_create_validates_and_rejects_duplicate(self):
-        payload = {"slug": "binary-search", "title": "Binary Search",
-                   "language": "Python", "file": "binary-search.py"}
+        payload = {"slug": "merge-sort", "title": "Merge Sort",
+                   "language": "Python", "file": "merge-sort.py"}
         r = self.client.post("/api/problems", json=payload)
         self.assertEqual(r.status_code, 201)
         self.assertEqual(self.client.post("/api/problems", json=payload).status_code,
