@@ -53,6 +53,15 @@ python app.py        # http://localhost:5000/api/stats
 4. Note: the Railway trial allows only **one** custom domain and tracker
    already uses it, so this ships on the Railway URL, not a subdomain.
 
+## Deploy (Vercel Hobby, free — no card)
+
+Added 20 Nov 2026 as the Railway trial winds down (50% of credits used).
+`api/index.py` re-exports the Flask app as a Vercel serverless function;
+`vercel.json` routes every path to it and sets `DATABASE_PATH=/tmp/dsa.db`
+(Vercel's filesystem is read-only except `/tmp`; the app re-seeds its 42
+problems on each cold start). Import the repo in Vercel, deploy, and check
+`https://<your-app>.vercel.app/api/stats` — expect `total_problems: 42`.
+
 ## Next step after shipping
 
 Update the Axe "Why should you be hired?" answer: replace
