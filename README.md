@@ -1,7 +1,7 @@
 # DSA Problems API — Flask REST API
 
-A shipped Flask project for Abhi's real data: the **42 problems** from his live
-DSA practice site (C 24, C++ 15, Python 3 — titles and languages copied from
+A shipped Flask project for Abhi's real data: the **45 problems** from his live
+DSA practice site (C 25, C++ 16, Python 4 — titles and languages copied from
 https://abhiproblems.dpdns.org/problems-site/ on 9 Nov 2026) plus the
 Hackathon Rivals leaderboard (Season 2026: 2 teams / 2 colleges, 1 entry at
 27 pts).
@@ -24,7 +24,7 @@ Django is still honestly unshipped — do not claim it.
 | Method | Path | What it does |
 | --- | --- | --- |
 | GET | `/health` | `{"status": "ok"}` |
-| GET | `/api/stats` | total 42, counts by language, teams/colleges |
+| GET | `/api/stats` | total 45, counts by language, teams/colleges |
 | GET | `/api/problems?q=linked+list&language=C` | search + filter |
 | GET | `/api/problems/<id>` | one problem, 404 if missing |
 | POST | `/api/problems` | add a problem (400 missing fields, 409 duplicate slug) |
@@ -49,7 +49,7 @@ python app.py        # http://localhost:5000/api/stats
 2. Railway → New Project → Deploy from GitHub → pick the repo.
    Start command is in `Procfile` (`gunicorn app:app`); Railway sets `PORT`.
 3. Check `https://<your-app>.up.railway.app/api/stats` — expect
-   `total_problems: 42`.
+   `total_problems: 45`.
 4. Note: the Railway trial allows only **one** custom domain and tracker
    already uses it, so this ships on the Railway URL, not a subdomain.
 
@@ -58,14 +58,14 @@ python app.py        # http://localhost:5000/api/stats
 Added 20 Nov 2026 as the Railway trial winds down (50% of credits used).
 `api/index.py` re-exports the Flask app as a Vercel serverless function;
 `vercel.json` routes every path to it and sets `DATABASE_PATH=/tmp/dsa.db`
-(Vercel's filesystem is read-only except `/tmp`; the app re-seeds its 42
+(Vercel's filesystem is read-only except `/tmp`; the app re-seeds its 45
 problems on each cold start). Import the repo in Vercel, deploy, and check
-`https://<your-app>.vercel.app/api/stats` — expect `total_problems: 42`.
+`https://<your-app>.vercel.app/api/stats` — expect `total_problems: 45`.
 
 ## Next step after shipping
 
 Update the Axe "Why should you be hired?" answer: replace
 "Django and Flask are the listed skills I haven't shipped in yet" with
 "I shipped a Flask REST API (DSA Problems API, live on Railway) serving
-my 42-problem DSA site over SQL-backed endpoints, with search, filters
+my 45-problem DSA site over SQL-backed endpoints, with search, filters
 and a leaderboard API." Django stays unclaimed.

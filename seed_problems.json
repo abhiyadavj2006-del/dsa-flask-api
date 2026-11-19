@@ -292,5 +292,26 @@
     "title": "15 File Handling",
     "language": "C++",
     "file": "15-file-handling.cpp"
+  },
+  {
+    "id": 43,
+    "slug": "25-binary-search",
+    "title": "25 Binary Search",
+    "language": "C",
+    "file": "25-binary-search.c"
+  },
+  {
+    "id": 44,
+    "slug": "binary-search",
+    "title": "Binary Search",
+    "language": "Python",
+    "file": "binary-search.py"
+  },
+  {
+    "id": 45,
+    "slug": "16-queue-using-class",
+    "title": "16 Queue Using Class",
+    "language": "C++",
+    "file": "16-queue-using-class.cpp"
   }
 ]
