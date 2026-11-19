@@ -56,11 +56,14 @@ python app.py        # http://localhost:5000/api/stats
 ## Deploy (Vercel Hobby, free — no card)
 
 Added 20 Nov 2026 as the Railway trial winds down (50% of credits used).
-`api/index.py` re-exports the Flask app as a Vercel serverless function;
-`vercel.json` routes every path to it and sets `DATABASE_PATH=/tmp/dsa.db`
-(Vercel's filesystem is read-only except `/tmp`; the app re-seeds its 45
-problems on each cold start). Import the repo in Vercel, deploy, and check
-`https://<your-app>.vercel.app/api/stats` — expect `total_problems: 45`.
+`app.py` at the repo root is Vercel's Flask entrypoint (no rewrites —
+Vercel's Nov 2026 Flask handling routes the real path to it; a rewrite
+to `/api/index` made Flask see `/api/index` for every request and 404).
+`vercel.json` sets `DATABASE_PATH=/tmp/dsa.db` (Vercel's filesystem is
+read-only except `/tmp`; the app re-seeds its 45 problems on each cold
+start) and `maxDuration: 60` for `app.py`. Import the repo in Vercel,
+deploy, and check `https://<your-app>.vercel.app/api/stats` — expect
+`total_problems: 45`.
 
 ## Next step after shipping
 
